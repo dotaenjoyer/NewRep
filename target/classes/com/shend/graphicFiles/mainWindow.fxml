@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="bodybg" stylesheets="@../stylesheets/style2.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.shend.controllers.OperatorController">
+    <children>
+      <ChoiceBox fx:id="choiceBar1" layoutX="40.0" layoutY="277.0" prefHeight="46.0" prefWidth="299.0" styleClass="button" AnchorPane.bottomAnchor="277.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="561.0" AnchorPane.topAnchor="277.0" />
+      <Button fx:id="editBar" layoutX="550.0" layoutY="520.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="155.0" text="Редагувати">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="newbar" layoutX="726.0" layoutY="520.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="155.0" text="Новий">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="randombutton" layoutX="122.0" layoutY="452.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="114.0" text="Показати">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <TextField fx:id="randomtext" layoutX="52.0" layoutY="389.0" prefHeight="46.0" prefWidth="254.0" style="-fx-background-radius: 10;">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button fx:id="deletebutton" layoutX="373.0" layoutY="520.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="155.0" text="Видалити">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="choos" layoutX="40.0" layoutY="162.0" prefHeight="46.0" prefWidth="299.0" styleClass="button" />
+      <Label fx:id="errorlabel" layoutX="76.0" layoutY="337.0" prefHeight="39.0" prefWidth="206.0" textFill="#e30000">
+         <font>
+            <Font name="Bell MT" size="25.0" />
+         </font>
+      </Label>
+      <Button fx:id="backbutton" layoutX="21.0" layoutY="24.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="96.0" text="Назад">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Text layoutX="81.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Оберіть список">
+         <font>
+            <Font name="Verdana" size="28.0" />
+         </font>
+      </Text>
+      <Text layoutX="67.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Оберіть функцію">
+         <font>
+            <Font name="Verdana" size="28.0" />
+         </font>
+      </Text>
+      <Button fx:id="journal" layoutX="244.0" layoutY="24.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="96.0" text="Журнал">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="printButton" layoutX="111.0" layoutY="525.0" mnemonicParsing="false" onMouseClicked="#print" prefHeight="46.0" prefWidth="136.0" text="Друк звіту">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <StackPane fx:id="stackpane" layoutX="356.0" layoutY="14.0" prefHeight="421.0" prefWidth="531.0" />
+      <Button fx:id="claearButton" layoutX="550.0" layoutY="452.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="155.0" text="Очистити" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="connectButton" layoutX="550.0" layoutY="452.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="155.0" text="Підключити" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="combo1" layoutX="57.0" layoutY="357.0" prefHeight="39.0" prefWidth="245.0" promptText="Оберіть" styleClass="bodybg" visible="false" />
+      <ComboBox fx:id="combo2" layoutX="57.0" layoutY="357.0" prefHeight="39.0" prefWidth="245.0" promptText="Оберіть" styleClass="bodybg" visible="false" />
+      <Button fx:id="disconnect" layoutX="373.0" layoutY="452.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="155.0" text="Відключити" visible="false">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
